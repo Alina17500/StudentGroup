@@ -10,7 +10,6 @@ public class StudentGroups {
     private List<Group> students;
 
     public StudentGroups() {
-        //databaseManager = new DatabaseManager(() -> DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "Ananas2905"));
         databaseManager = new DatabaseManager(() -> DriverManager.getConnection("jdbc:mysql://localhost:3306/studentsdb", "root", "delFin92!"));
         groups = new ArrayList<>();
         students = new ArrayList<>();
